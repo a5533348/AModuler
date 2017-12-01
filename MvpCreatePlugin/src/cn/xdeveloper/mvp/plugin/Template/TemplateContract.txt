@@ -1,0 +1,14 @@
+package $packagename;
+
+
+public interface $nameContract {
+
+    interface View extends IView {
+
+    }
+
+    interface Presenter extends IPresenter {
+
+    }
+
+}

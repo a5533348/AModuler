@@ -1,0 +1,16 @@
+package $packagename;
+
+
+@Module
+public abstract class $nameModule {
+
+    @$injectTypeScope
+    @Binds
+    abstract $nameContract.View view($name$injectType view);
+
+
+    @$injectTypeScope
+    @Binds
+    abstract $nameContract.Presenter presenter($namePresenter presenter);
+
+}

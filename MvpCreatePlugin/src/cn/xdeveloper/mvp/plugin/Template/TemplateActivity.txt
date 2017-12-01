@@ -1,0 +1,20 @@
+package $packagename;
+
+
+
+public class $nameActivity extends BaseActivity<$nameContract.Presenter> implements $nameContract.View {
+
+
+    @Inject
+    public $nameActivity(){}
+
+    @Override
+    protected int getContentView() {
+        return 0;
+    }
+
+    @Override
+    protected void initData() {
+
+    }
+}

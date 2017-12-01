@@ -1,0 +1,19 @@
+package $packagename;
+
+
+public class $namePresenter extends BasePresenter<$nameContract.View> implements $nameContract.Presenter {
+
+
+    @Inject
+    $namePresenter() {
+
+    }
+
+
+    @Override
+    public void onDestroy() {
+
+    }
+
+
+}

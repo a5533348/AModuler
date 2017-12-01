@@ -1,0 +1,19 @@
+package $packagename;
+
+
+public class $nameFragment extends BaseFragment<$nameContract.Presenter> implements $nameContract.View {
+
+
+    @Inject
+    public $nameFragment(){}
+
+    @Override
+    protected View initView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        return null;
+    }
+
+    @Override
+    protected void initData() {
+
+    }
+}

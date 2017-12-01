@@ -1,0 +1,42 @@
+<idea-plugin version="2">
+    <id>cn.xdeveloper.mvp.unique.plugin.id</id>
+    <name>MVPCreator</name>
+    <version>1.1</version>
+
+    <description><![CDATA[
+      MVP代码生成，For GYENNO CLOUD<br>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      1.1.<br>
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="141.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products  -->
+    <depends>com.intellij.modules.lang</depends>
+
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <group id="MvpGen" text="MvpGen" popup="true">
+            <add-to-group group-id="NewGroup" anchor="first"/>
+        </group>
+
+        <action id="Mvp_Activity" class="cn.xdeveloper.mvp.plugin.action.MVPActivityAction" text="Activity">
+            <add-to-group group-id="MvpGen" anchor="first"/>
+        </action>
+        <action id="Mvp_Fragment" class="cn.xdeveloper.mvp.plugin.action.MVPFragmentAction" text="Fragment">
+            <add-to-group group-id="MvpGen" anchor="last"/>
+        </action>
+    </actions>
+
+</idea-plugin>
