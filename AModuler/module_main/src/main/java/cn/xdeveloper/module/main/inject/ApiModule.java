@@ -1,8 +1,8 @@
 package cn.xdeveloper.module.main.inject;
 
 
-import cn.xdeveloper.common.BuildConstants;
-import cn.xdeveloper.common.inject.scope.ModuleScope;
+import cn.xdeveloper.lib.common.BuildConstants;
+import cn.xdeveloper.lib.common.inject.scope.ModuleScope;
 import dagger.Module;
 import dagger.Provides;
 import okhttp3.OkHttpClient;

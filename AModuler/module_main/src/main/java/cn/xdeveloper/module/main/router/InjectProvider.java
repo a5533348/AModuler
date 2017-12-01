@@ -7,7 +7,7 @@ import android.support.v4.app.Fragment;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.facade.template.IProvider;
 
-import cn.xdeveloper.common.RouterURL;
+import cn.xdeveloper.lib.common.RouterURL;
 import cn.xdeveloper.module.main.inject.ModuleInjector;
 import dagger.android.AndroidInjector;
 import dagger.android.HasActivityInjector;

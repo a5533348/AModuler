@@ -1,4 +1,4 @@
-package cn.xdeveloper.common;
+package cn.xdeveloper.lib.common;
 
 public class BuildConstants {
 

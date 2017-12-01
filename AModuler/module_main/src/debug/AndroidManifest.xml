@@ -3,7 +3,7 @@
 
 
     <application
-        android:name="cn.xdeveloper.common.App"
+        android:name="cn.xdeveloper.lib.common.App"
         android:theme="@style/AppTheme">
 
         <activity

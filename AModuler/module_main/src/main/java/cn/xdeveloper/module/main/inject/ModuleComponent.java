@@ -1,7 +1,7 @@
 package cn.xdeveloper.module.main.inject;
 
-import cn.xdeveloper.common.inject.AppComponent;
-import cn.xdeveloper.common.inject.scope.ModuleScope;
+import cn.xdeveloper.lib.common.inject.AppComponent;
+import cn.xdeveloper.lib.common.inject.scope.ModuleScope;
 import dagger.Component;
 import dagger.android.AndroidInjector;
 import dagger.android.support.AndroidSupportInjectionModule;

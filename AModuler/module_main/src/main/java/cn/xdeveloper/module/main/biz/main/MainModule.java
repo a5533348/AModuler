@@ -1,7 +1,7 @@
 package cn.xdeveloper.module.main.biz.main;
 
 
-import cn.xdeveloper.common.inject.scope.ActivityScope;
+import cn.xdeveloper.lib.common.inject.scope.ActivityScope;
 import dagger.Binds;
 import dagger.Module;
 
