@@ -8,6 +8,7 @@ import android.content.ContentProvider;
 
 import javax.inject.Inject;
 
+import cn.xdeveloper.lib.common.inject.AppComponent;
 import dagger.android.AndroidInjector;
 import dagger.android.DispatchingAndroidInjector;
 import dagger.android.HasActivityInjector;
@@ -51,17 +52,17 @@ public abstract class BaseModuleInjector
         needToInject = false;
     }
 
-    protected abstract AndroidInjector<? extends BaseModuleInjector> moduleInjector();
+    protected abstract AndroidInjector<? extends BaseModuleInjector> moduleInjector(AppComponent appComponent);
 
 
-    public void injectIfNecessary() {
+    public void injectIfNecessary(AppComponent appComponent) {
 
         if (needToInject) {
             synchronized (this) {
                 if (needToInject) {
                     @SuppressWarnings("unchecked")
                     AndroidInjector<BaseModuleInjector> moduleInjector =
-                            (AndroidInjector<BaseModuleInjector>) moduleInjector();
+                            (AndroidInjector<BaseModuleInjector>) moduleInjector(appComponent);
                     moduleInjector.inject(this);
                     if (needToInject) {
                         throw new IllegalStateException(

@@ -20,8 +20,7 @@ public class ModuleApplication extends ApplicationInit {
 
         App app = (App) context;
         ModuleInjector injector = ModuleInjector.getInstance();
-        injector.setAppComponent(app.getAppComponent());
-        injector.injectIfNecessary();
+        injector.injectIfNecessary(app.getAppComponent());
     }
 
 

@@ -23,16 +23,9 @@ public class ModuleInjector extends BaseModuleInjector {
     private ModuleInjector() {
     }
 
-    private AppComponent appComponent;
-
-
-    public void setAppComponent(AppComponent appComponent) {
-        this.appComponent = appComponent;
-    }
-
 
     @Override
-    protected AndroidInjector<? extends BaseModuleInjector> moduleInjector() {
+    protected AndroidInjector<? extends BaseModuleInjector> moduleInjector(AppComponent appComponent) {
         return DaggerModuleComponent
                 .builder()
                 .apiModule(new ApiModule())
