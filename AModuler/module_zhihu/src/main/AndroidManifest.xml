@@ -1,2 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="cn.xdeveloper.module.zhihu" />
+    package="cn.xdeveloper.module.zhihu" >
+
+
+    <application android:theme="@style/AppTheme">
+
+        <activity android:name=".biz.daily.DailyActivity"/>
+
+    </application>
+
+</manifest>

@@ -1,7 +1,11 @@
 package cn.xdeveloper.module.gank.inject;
 
 
+import cn.xdeveloper.lib.common.inject.scope.ActivityScope;
+import cn.xdeveloper.module.gank.biz.girl.GirlActivity;
+import cn.xdeveloper.module.gank.biz.girl.GirlModule;
 import dagger.Module;
+import dagger.android.ContributesAndroidInjector;
 
 /**
  * 注册View
@@ -11,6 +15,8 @@ import dagger.Module;
 @Module
 public abstract class ViewModule {
 
-
+    @ActivityScope
+    @ContributesAndroidInjector(modules = GirlModule.class)
+    abstract GirlActivity girlActivity();
 
 }

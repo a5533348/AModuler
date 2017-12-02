@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
+
+    <Button
+        android:id="@+id/btn_gank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gank.io"/>
+
+    <Button
+        android:id="@+id/btn_zhihu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="知乎"/>
+
+    <Button
+        android:id="@+id/btn_github"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Github"/>
 </LinearLayout>
