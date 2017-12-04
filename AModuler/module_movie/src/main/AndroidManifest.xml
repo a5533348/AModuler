@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.xdeveloper.module.movie">
+
+    <application android:theme="@style/AppTheme">
+
+        <activity android:name=".biz.newmovie.NewMovieActivity"/>
+
+    </application>
+
+</manifest>

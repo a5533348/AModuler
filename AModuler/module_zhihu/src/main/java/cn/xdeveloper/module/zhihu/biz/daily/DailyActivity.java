@@ -1,7 +1,6 @@
 package cn.xdeveloper.module.zhihu.biz.daily;
 
 
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
@@ -13,13 +12,14 @@ import javax.inject.Inject;
 
 import butterknife.BindView;
 import cn.xdeveloper.lib.common.RouterURL;
-import cn.xdeveloper.lib.common.inject.mvp.BaseActivity;
+import cn.xdeveloper.lib.common.base.BaseActivity;
+import cn.xdeveloper.lib.common.inject.mvp.BaseMvpActivity;
 import cn.xdeveloper.module.zhihu.R;
 import cn.xdeveloper.module.zhihu.R2;
 import cn.xdeveloper.module.zhihu.http.dto.ZhihuStory;
 
 @Route(path = RouterURL.ZhihuModule.DAILY)
-public class DailyActivity extends BaseActivity<DailyContract.Presenter> implements DailyContract.View {
+public class DailyActivity extends BaseMvpActivity<DailyContract.Presenter> implements DailyContract.View {
 
     @BindView(R2.id.dailyList)
     RecyclerView dailyList;

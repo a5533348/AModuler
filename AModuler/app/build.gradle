@@ -31,7 +31,7 @@ dependencies {
     } else {
         compile project(':module_main')
         compile project(':module_zhihu')
-        compile project(':module_github')
+        compile project(':module_movie')
         compile project(':module_gank')
     }
 }

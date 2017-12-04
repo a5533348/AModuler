@@ -12,13 +12,14 @@ import javax.inject.Inject;
 
 import butterknife.BindView;
 import cn.xdeveloper.lib.common.RouterURL;
-import cn.xdeveloper.lib.common.inject.mvp.BaseActivity;
+import cn.xdeveloper.lib.common.base.BaseActivity;
+import cn.xdeveloper.lib.common.inject.mvp.BaseMvpActivity;
 import cn.xdeveloper.module.gank.R;
 import cn.xdeveloper.module.gank.R2;
 import cn.xdeveloper.module.gank.http.dto.GankItem;
 
 @Route(path = RouterURL.GankModule.GIRL)
-public class GirlActivity extends BaseActivity<GirlContract.Presenter> implements GirlContract.View {
+public class GirlActivity extends BaseMvpActivity<GirlContract.Presenter> implements GirlContract.View {
 
     @BindView(R2.id.girlList)
     RecyclerView girlList;

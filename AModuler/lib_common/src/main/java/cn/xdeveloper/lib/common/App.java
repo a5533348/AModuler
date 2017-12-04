@@ -49,7 +49,7 @@ public class App extends Application {
     private void dispatchOnCreateToModule() {
         ARouter.getInstance().build(RouterURL.MainModule.CREATE).navigation();
         ARouter.getInstance().build(RouterURL.GankModule.CREATE).navigation();
-        ARouter.getInstance().build(RouterURL.GithubModule.CREATE).navigation();
+        ARouter.getInstance().build(RouterURL.MovieModule.CREATE).navigation();
         ARouter.getInstance().build(RouterURL.ZhihuModule.CREATE).navigation();
     }
 

@@ -1,12 +1,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="cn.xdeveloper.module.main" >
+    package="cn.xdeveloper.module.movie" >
 
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <application
+        android:name="cn.xdeveloper.lib.common.App"
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".biz.main.MainActivity"
+            android:name=".biz.newmovie.NewMovieActivity"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -14,7 +17,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".biz.main.TabActivity"/>
 
     </application>
 

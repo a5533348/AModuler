@@ -1,25 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    android:padding="20dp">
 
     <Button
         android:id="@+id/btn_gank"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Gank.io"/>
+        android:background="@drawable/selector_btn"
+        android:text="Gank.io福利"
+        android:textColor="@android:color/white" />
 
     <Button
         android:id="@+id/btn_zhihu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="知乎"/>
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_btn"
+        android:text="知乎日报"
+        android:textColor="@android:color/white" />
 
     <Button
-        android:id="@+id/btn_github"
+        android:id="@+id/btn_movie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Github"/>
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_btn"
+        android:text="电影"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_btn"
+        android:text="Fragment"
+        android:textColor="@android:color/white" />
 </LinearLayout>

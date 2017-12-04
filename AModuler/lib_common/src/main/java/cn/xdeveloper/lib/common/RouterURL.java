@@ -37,6 +37,8 @@ public class RouterURL {
 
         //日报
         public static final String DAILY = "/zhihu/daily";
+        //fragment
+        public static final String FRAGMENT = "/zhihu/fragment";
     }
 
     /**
@@ -53,18 +55,25 @@ public class RouterURL {
 
         //女孩
         public static final String GIRL = "/gank/girl";
+        //fragment
+        public static final String FRAGMENT = "/gank/fragment";
     }
 
     /**
-     * module_github
+     * module_movie
      */
-    public static class GithubModule {
+    public static class MovieModule {
 
         //模块包名
-        public static final String PACKAGE_NAME = "cn.xdeveloper.module.github";
+        public static final String PACKAGE_NAME = "cn.xdeveloper.module.movie";
         //初始化
-        public static final String CREATE = "/github/create";
+        public static final String CREATE = "/movie/create";
         //注入
-        public static final String INJECT = "/github/inject";
+        public static final String INJECT = "/movie/inject";
+
+        //电影
+        public static final String NEW_MOVIE = "/movie/newMovie";
+        //fragment
+        public static final String FRAGMENT = "/movie/fragment";
     }
 }
